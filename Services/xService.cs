@@ -20,8 +20,12 @@ namespace oneie_ai_ml_service.Services
 
         public static async Task<string> RunMe2()
         {
-            HttpResponseMessage response = await client.GetAsync(
-                "https://oneie-ai-ml-function-app.azurewebsites.net/api/HttpTriggerPython31?code=T5ZNlCxh9HmVMM9WmcxXJE7qz8ynfinmUngwUESYaRYUNDAhjXJADw==&name=jj");
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .AddEnvironmentVariables();
+            var config = builder.Build();
+            HttpResponseMessage response = await client.GetAsync(config["perform_lead_scoring_function"]);
             if (response.IsSuccessStatusCode)
             {
                 Console.WriteLine(await response.Content.ReadAsStringAsync());
