@@ -34,3 +34,7 @@ replace x's with the servers ip
 
 and run
 $ sudo dotnet run     or get permission denied when running on port 80
+
+# References
+
+https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-cli
