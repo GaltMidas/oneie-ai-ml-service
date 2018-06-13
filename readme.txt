@@ -20,6 +20,11 @@ http://localhost:5000/api/leadscoring/perform/james/google =>
 
 create vm in vnet       see create_vnet_vm.sh.ex, also opens port 80 in inbound rules
 
+install dotnet core, 
+
+Force HTTPS on function
+Platform features > Custom Domains > toggle HTTPS Only to 'On'.
+
 git clone https://github.com/GaltMidas/oneie-ai-ml-service.git
 
 cp appsettings.Development.json appsettings.json
@@ -38,3 +43,5 @@ $ sudo dotnet run     or get permission denied when running on port 80
 # References
 
 https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-cli
+
+https://github.com/Azure/azure-functions-host/issues/1228
