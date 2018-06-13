@@ -2,6 +2,11 @@
 
 dotnet new webapi -o oneie-ai-ml-service
 
+MongoDB.Driver
+Microsoft.Extensions.Configuration
+
+# API
+
 http://localhost:5000/api/leadscoring/perform/james/google =>
 
 [
@@ -10,9 +15,6 @@ http://localhost:5000/api/leadscoring/perform/james/google =>
     "db Data here",
     "80%"
 ]
-
-MongoDB.Driver
-Microsoft.Extensions.Configuration
 
 # Deploy
 
