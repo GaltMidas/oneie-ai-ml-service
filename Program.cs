@@ -20,6 +20,8 @@ namespace oneie_ai_ml_service
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .UseUrls("http://localhost:80") // replace localhost with server's ip address when deploying
+                //.UseUrls("http://*:5000;http://localhost:5001;https://hostname:5002")
                 .Build();
     }
 }
