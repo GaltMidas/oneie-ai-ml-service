@@ -30,7 +30,7 @@ git clone https://github.com/GaltMidas/oneie-ai-ml-service.git
 cp appsettings.Development.json appsettings.json
 and edit with your specific info
 
-$ restore       installs dependencies
+$ dotnet restore       installs dependencies
 
 edit Program.cs
 ---------------
