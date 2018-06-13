@@ -35,7 +35,7 @@ $ dotnet restore       installs dependencies
 edit Program.cs
 ---------------
 .UseUrls("http://x.xx.xx.xx:80")
-replace x's with the servers ip
+replace x's with the servers ip or host name
 
 and run
 $ sudo dotnet run     or get permission denied when running on port 80
