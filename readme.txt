@@ -20,7 +20,7 @@ http://localhost:5000/api/leadscoring/perform/james/google =>
 
 create vm in vnet       see create_vnet_vm.sh.ex, also opens port 80 in inbound rules
 
-install dotnet core       see reference
+install dotnet core       see reference, sdk includes the dotnet runtime
 
 Force HTTPS on function
 Platform features > Custom Domains > toggle HTTPS Only to 'On'.
